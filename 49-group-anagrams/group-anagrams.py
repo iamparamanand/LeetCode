@@ -8,3 +8,12 @@ class Solution:
                 count[ord(c) - ord("a")] += 1
             ans[tuple(count)].append(s)
         return ans.values()
+#Second Approach
+        # a = dict()
+        # for i in range(len(strs)):
+        #     b = "".join(sorted(strs[i]))
+        #     if b not in a:
+        #         a[b] = [strs[i]]
+        #     else:
+        #         a[b].append(strs[i])
+        # return a.values()
